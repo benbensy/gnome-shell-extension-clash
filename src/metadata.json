@@ -1,7 +1,9 @@
 {
+    "shell-version": ["46"],
     "uuid": "clash@gnome-shell-extensions.benbensy.github.com",
     "name": "Clash",
     "description": "Gnome clash extension.",
-    "shell-version": ["46"],
-    "url": "http://github.com/benbensy/gnome-shell-extensions-clash"
+    "url": "https://github.com/benbensy/gnome-shell-extensions-clash",
+    "gettext-domain": "clash",
+    "settings-schema": "org.gnome.shell.extensions.clash"
 }

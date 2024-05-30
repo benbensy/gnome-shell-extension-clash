@@ -6,16 +6,9 @@
         "esModuleInterop": true,
         "experimentalDecorators": true,
         "skipLibCheck": true,
-        "lib": ["ESNext"],
+        "lib": ["ESNext", "DOM"],
         "strictNullChecks": true,
         "exactOptionalPropertyTypes": true,
-        "types": [
-            "@girs/gjs",
-            "@girs/gjs/dom",
-            "@girs/gnome-shell/ambient",
-            "@girs/gnome-shell/extensions/global",
-            "@girs/gtk-4.0"
-        ],
         "paths": {
             "@/*": ["./src/*"]
         }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.clash" path="/org/gnome/shell/extensions/clash/">
+    <key name="show-indicator" type="b">
+      <default>true</default>
+    </key>
+    <key type="i" name="display-mode">
+        <default>0</default>
+        <summary>切换内核</summary>
+        <range min="0" max="3"/>
+    </key>
+  </schema>
+</schemalist>

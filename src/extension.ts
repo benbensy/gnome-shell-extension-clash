@@ -1,4 +1,7 @@
-import {Extension, ExtensionMetadata} from '@girs/gnome-shell/extensions/extension'
+import {
+    Extension,
+    ExtensionMetadata,
+} from '@girs/gnome-shell/extensions/extension'
 import * as Main from '@girs/gnome-shell/ui/main'
 import { ClashIndicator } from './components/indicator'
 
@@ -10,14 +13,15 @@ export default class ClashExtension extends Extension {
     }
 
     enable() {
-        this.clashIndicator = new ClashIndicator()
+        this.clashIndicator = new ClashIndicator({
+            openSettings: this.openPreferences.bind(this),
+        })
 
         Main.panel.addToStatusArea('clashIndicator', this.clashIndicator, 1)
     }
 
     disable() {
-        this.clashIndicator?.destroy();
-        this.clashIndicator = null;
+        this.clashIndicator?.destroy()
+        this.clashIndicator = null
     }
-
 }

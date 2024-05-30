@@ -5,28 +5,33 @@
   "main": "index.js",
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "dev": "sh run-gnome-shell-nested.sh",
+    "ln": "sh install.sh"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@9.1.2+sha512.127dc83b9ea10c32be65d22a8efb4a65fb952e8fefbdfded39bdc3c97efc32d31b48b00420df2c1187ace28c921c902f0cb5a134a4d032b8b5295cbfa2c681e2",
   "devDependencies": {
+    "@girs/adw-1": "1.5.0-4.0.0-beta.2",
+    "@girs/clutter-14": "14.0.0-3.3.0",
+    "@girs/gio-2.0": "2.78.0-3.3.0",
     "@girs/gjs": "^3.3.0",
-    "@girs/gnome-shell": "46.0.0-beta8",
-    "@girs/gobject-2.0": "2.78.0-3.3.0",
-    "@girs/gtk-4.0": "4.12.5-3.3.0",
+    "@girs/gnome-shell": "46.0.0-4.0.0-beta.3",
+    "@girs/gobject-2.0": "2.80.0-4.0.0-beta.2",
+    "@girs/gtk-4.0": "4.14.1-4.0.0-beta.2",
+    "@girs/soup-3.0": "3.4.4-4.0.0-beta.2",
+    "@girs/st-14": "14.0.0-4.0.0-beta.2",
     "@rollup/plugin-commonjs": "^25.0.8",
     "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-typescript": "^11.1.6",
     "rimraf": "^5.0.7",
     "rollup": "^4.18.0",
+    "rollup-plugin-conditional-exec": "^2.8.0",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-tsconfig-paths": "^1.5.2",
+    "rollup-plugin-typescript2": "^0.36.0",
     "tslib": "^2.6.2",
     "typescript": "^5.4.5"
-  },
-  "dependencies": {
-    "@girs/gnome-shell": "46.0.0-beta8"
   }
 }
